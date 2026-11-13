@@ -9,21 +9,38 @@
 
   <meta name="apple-mobile-web-app-title" content="Joy Asset">
   <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
   <meta name="theme-color" content="#4b3022">
 
+  <!-- Joy Asset Home Screen Icon -->
   <link rel="apple-touch-icon"
-    href="https://raw.githubusercontent.com/Joyasset2020/joy-asset-icons-new/main/apple-touch-icon.png">
+    sizes="180x180"
+    href="https://raw.githubusercontent.com/Joyasset2020/joy-asset-icons-new/main/apple-touch-icon.png?v=5">
 
-  <link rel="icon" type="image/png"
-    href="https://raw.githubusercontent.com/Joyasset2020/joy-asset-icons-new/main/apple-touch-icon.png">
+  <!-- Browser Favicon -->
+  <link rel="icon"
+    type="image/png"
+    href="https://raw.githubusercontent.com/Joyasset2020/joy-asset-icons-new/main/apple-touch-icon.png?v=5">
+
+  <!-- Automatic redirect -->
+  <meta http-equiv="refresh"
+    content="0;url=https://script.google.com/macros/s/AKfycbwIHasr35IIbBJ3pRbgydYnz8DToyuAlJ1DObkKKv97jSZCzGybrbOuPp3NGrf1wOhdug/exec">
 </head>
 
 <body>
   <p>Opening Joy Asset Attendance Portal...</p>
 
+  <p>
+    If the portal does not open automatically,
+    <a href="https://script.google.com/macros/s/AKfycbwIHasr35IIbBJ3pRbgydYnz8DToyuAlJ1DObkKKv97jSZCzGybrbOuPp3NGrf1wOhdug/exec">
+      Click here to open the attendance portal
+    </a>.
+  </p>
+
   <script>
-    const LOGIN_URL = "PASTE_YOUR_EXISTING_GOOGLE_APPS_SCRIPT_URL_HERE";
-    window.location.replace(LOGIN_URL);
+    window.location.replace(
+      "https://script.google.com/macros/s/AKfycbwIHasr35IIbBJ3pRbgydYnz8DToyuAlJ1DObkKKv97jSZCzGybrbOuPp3NGrf1wOhdug/exec"
+    );
   </script>
 </body>
 </html>
