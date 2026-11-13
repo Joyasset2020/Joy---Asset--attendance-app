@@ -12,35 +12,160 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
   <meta name="theme-color" content="#4b3022">
 
-  <!-- Joy Asset Home Screen Icon -->
-  <link rel="apple-touch-icon"
-    sizes="180x180"
+  <!-- iPhone Home Screen Icon -->
+  <link rel="apple-touch-icon" sizes="180x180"
     href="https://raw.githubusercontent.com/Joyasset2020/joy-asset-icons-new/main/apple-touch-icon.png?v=5">
 
-  <!-- Browser Favicon -->
-  <link rel="icon"
-    type="image/png"
+  <!-- Browser Icon -->
+  <link rel="icon" type="image/png"
     href="https://raw.githubusercontent.com/Joyasset2020/joy-asset-icons-new/main/apple-touch-icon.png?v=5">
 
-  <!-- Automatic redirect -->
-  <meta http-equiv="refresh"
-    content="0;url=https://script.google.com/macros/s/AKfycbwIHasr35IIbBJ3pRbgydYnz8DToyuAlJ1DObkKKv97jSZCzGybrbOuPp3NGrf1wOhdug/exec">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      padding: 24px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #f3e4d2;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #4b3022;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 720px;
+      min-height: 85vh;
+      padding: 45px 35px;
+      background: #ffffff;
+      border: 6px solid #dfc29c;
+      border-radius: 55px;
+      box-shadow: 0 15px 35px rgba(75, 48, 34, 0.08);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      text-align: center;
+    }
+
+    .logo {
+      width: 260px;
+      max-width: 75%;
+      height: auto;
+      object-fit: contain;
+      margin: 5px auto 20px;
+    }
+
+    h1 {
+      font-size: clamp(30px, 6vw, 48px);
+      line-height: 1.25;
+      margin: 20px 0;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+    }
+
+    .subtitle {
+      color: #887568;
+      font-size: clamp(19px, 3.8vw, 27px);
+      line-height: 1.5;
+      margin: 10px 0 35px;
+    }
+
+    .launch-button {
+      display: block;
+      width: 100%;
+      max-width: 560px;
+      padding: 28px 18px;
+      border-radius: 32px;
+      background: #681b3d;
+      color: #ffffff;
+      text-decoration: none;
+      font-size: clamp(21px, 4vw, 32px);
+      font-weight: bold;
+      transition: background 0.2s ease;
+    }
+
+    .launch-button:active {
+      background: #4b1230;
+      transform: scale(0.98);
+    }
+
+    .footer {
+      color: #92877f;
+      font-size: 18px;
+      line-height: 1.5;
+      margin-top: 25px;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 12px;
+      }
+
+      .container {
+        min-height: calc(100vh - 24px);
+        padding: 28px 20px;
+        border-width: 5px;
+        border-radius: 42px;
+      }
+
+      .logo {
+        width: 230px;
+        margin-bottom: 15px;
+      }
+
+      h1 {
+        margin: 12px 0;
+      }
+
+      .subtitle {
+        margin: 8px 0 25px;
+      }
+
+      .launch-button {
+        padding: 23px 12px;
+        border-radius: 27px;
+      }
+
+      .footer {
+        font-size: 16px;
+      }
+    }
+  </style>
 </head>
 
 <body>
-  <p>Opening Joy Asset Attendance Portal...</p>
+  <main class="container">
 
-  <p>
-    If the portal does not open automatically,
-    <a href="https://script.google.com/macros/s/AKfycbwIHasr35IIbBJ3pRbgydYnz8DToyuAlJ1DObkKKv97jSZCzGybrbOuPp3NGrf1wOhdug/exec">
-      Click here to open the attendance portal
-    </a>.
-  </p>
+    <!-- Joy Asset Company Logo -->
+    <img
+      class="logo"
+      src="./Joy%20Asset%20logo.jpeg%20new.jpeg?v=5"
+      alt="Joy Asset Pvt Ltd Logo">
 
-  <script>
-    window.location.replace(
-      "https://script.google.com/macros/s/AKfycbwIHasr35IIbBJ3pRbgydYnz8DToyuAlJ1DObkKKv97jSZCzGybrbOuPp3NGrf1wOhdug/exec"
-    );
-  </script>
+    <h1>JOY ASSET PVT. LTD.</h1>
+
+    <p class="subtitle">
+      Employee &amp; Admin Attendance Portal
+    </p>
+
+    <!-- Open Google Apps Script Attendance Portal -->
+    <a
+      class="launch-button"
+      href="https://script.google.com/macros/s/AKfycbwIHasr35IIbBJ3pRbgydYnz8DToyuAlJ1DObkKKv97jSZCzGybrbOuPp3NGrf1wOhdug/exec"
+      target="_self">
+      Open Attendance Portal
+    </a>
+
+    <p class="footer">
+      © Joy Asset Pvt. Ltd. All Rights Reserved.
+    </p>
+
+  </main>
 </body>
 </html>
